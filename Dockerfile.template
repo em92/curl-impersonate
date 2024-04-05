@@ -8,7 +8,7 @@
 {{#debian}}
 # Python is needed for building libnss.
 # Use it as a common base.
-FROM python:3.11-slim-bookworm as builder
+FROM python:3.11-slim-buster builder
 {{/debian}}
 {{#alpine}}
 FROM alpine:3.18 as builder
